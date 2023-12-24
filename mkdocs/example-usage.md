@@ -1,11 +1,11 @@
 # Example usage
 
-## Initialize client
+## Initialize API
 
 ```python
-from pulseeco import PulseEcoClient
+from pulseeco.api import PulseEcoAPI
 
-pulse_eco = PulseEcoClient(city_name="skopje", auth=("user", "pass"))
+pulse_eco = PulseEcoAPI(city_name="skopje", auth=("user", "pass"))
 ```
 
 ## Get all sensors

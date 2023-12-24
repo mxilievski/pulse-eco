@@ -1,8 +1,8 @@
-from .client import PulseEcoClient
 from .enums import AveragePeriod, DataValueType, SensorStatus, SensorType
+from .pulse_eco_api import PulseEcoAPI
 
 __all__ = [
-    "PulseEcoClient",
+    "PulseEcoAPI",
     "AveragePeriod",
     "DataValueType",
     "SensorStatus",
