@@ -1,4 +1,4 @@
-site_name: pulse-eco
+site_name: pulse-eco-ha
 docs_dir: mkdocs/
 theme:
   name: material

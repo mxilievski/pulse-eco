@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     import datetime
 
-    from pulseeco.api.data_types import DataValueAvg, DataValueRaw, Overall, Sensor
+    from pulseeco.data_types import DataValueAvg, DataValueRaw, Overall, Sensor
 
 from abc import ABC, abstractmethod
 

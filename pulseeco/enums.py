@@ -61,6 +61,7 @@ class DataValueType(StrEnum):
     NOISE = "noise"
     GAS_RESISTANCE = "gasResistance"
 
+
 class AveragePeriod(StrEnum):
     DAY = "day"
     WEEK = "week"

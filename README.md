@@ -1,42 +1,34 @@
-# pulse-eco
+# pulse-eco-ha
 
-![GitHub Workflow Test](https://github.com/martinkozle/pulse-eco/actions/workflows/test.yml/badge.svg)
-[![codecov](https://codecov.io/gh/martinkozle/pulse-eco/branch/main/graph/badge.svg)](https://codecov.io/gh/martinkozle/pulse-eco)
-![GitHub Workflow Build](https://github.com/martinkozle/pulse-eco/actions/workflows/build.yml/badge.svg)
+![GitHub Workflow Test](https://github.com/mxilievski/pulse-eco-ha/actions/workflows/test.yml/badge.svg)
+![GitHub Workflow Build](https://github.com/mxilievski/pulse-eco-ha/actions/workflows/build.yml/badge.svg)
 
-[![PyPI](https://img.shields.io/pypi/v/pulse-eco?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/pulse-eco)
+[![PyPI](https://img.shields.io/pypi/v/pulse-eco-ha?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/pulse-eco-ha)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pulse-eco)
 
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)
-[![GitHub license](https://img.shields.io/github/license/martinkozle/pulse-eco)](https://github.com/martinkozle/pulse-eco/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/martinkozle/pulse-eco)](https://github.com/mxilievski/pulse-eco-ha/blob/main/LICENSE)
 
 [![pulse.eco logo](https://pulse.eco/img/pulse-logo-horizontal.svg)](https://pulse.eco)
 
-pulse.eco client for Python.
+
+This project is a customized version based on the [Pulse Eco](https://github.com/martinkozle/pulse-eco) project by [Martin Kozle](https://github.com/martinkozle). The original project is a fantastic initiative, and I want to express my gratitude to Martin and the contributors for their hard work.
+
+## Adjusted Version
+
+This repository serves as an adjusted version tailored for use with Home Assistant. Many thanks to the original developers for laying the groundwork. For detailed documentation, credits, and other information about the original Pulse Eco project, please refer to the [original repository](https://github.com/martinkozle/pulse-eco).
+
+Feel free to explore the original project for a comprehensive understanding of its features and functionality.
 
 ## Installation
 
-pulse-eco is avialiable on [PyPI](https://pypi.org/project/pulse-eco):
+pulse-eco-ha is avialiable on [PyPI](https://pypi.org/project/pulse-eco-ha):
 
 ```console
-python -m pip install pulse-eco
+python -m pip install pulse-eco-ha
 ```
 
 Requires Python version 3.8+.
-
-## Documentation
-
-Official pulse.eco REST API documentation can be found on  [pulse.eco/restapi](https://pulse.eco/restapi).
-
-API Reference and User Guide for this package is available on [GitHub Pages](https://martinkozle.github.io/pulse-eco/).
-
-## Requesting data with a larger time range
-
-The pulse.eco API limits the maximum time span of data you can get from one request.
-For `/dataRaw` it is one week, while for `/avgData` it is one year.
-
-If the time range is larger than the maximum, the pulse.eco client creates multiple requests to the API and then joins the data together. Be aware of this.
 
 ## Development
 
@@ -72,12 +64,4 @@ This command must pass without errors before committing:
 
 ```console
 hatch run dev:check
-```
-
-### Docs
-
-To preview the docs locally, run:
-
-```console
-hatch run dev:docs-serve
 ```

@@ -1,3 +1,0 @@
-# PulseEcoAPI
-
-::: pulseeco.api
