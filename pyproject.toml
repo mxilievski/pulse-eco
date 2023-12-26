@@ -70,6 +70,9 @@ version-file = "pulseeco/_version.py"
 [tool.hatch.build.targets.sdist]
 include = ["/pulseeco"]
 
+[tool.hatch.build.targets.wheel]
+include = ["/pulseeco"]
+
 [tool.mypy]
 python_version = "3.8"
 modules = ["pulseeco", "tests"]
